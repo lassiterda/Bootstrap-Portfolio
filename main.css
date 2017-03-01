@@ -1,0 +1,143 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+main {
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 50px;
+}
+
+hr {
+  width: 60%;
+}
+
+footer {
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+}
+h2 {
+  padding-bottom: 20px;
+}
+#header {
+  font-size: 18px;
+  background-color: #000;
+  color: #ccc;
+}
+
+#brand {
+ font-size: 30px;
+ font-weight: 100;
+ letter-spacing: 1px;
+}
+
+#brand span {
+    font-family: 'Oswald';
+    font-size: 18px;
+}
+
+.headshot {
+  margin: 0 auto;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.42);
+  margin-top: -150px;
+  height: 250px;
+  width: 250px;
+}
+main ul {
+  display: block;
+  padding-left: 0px;
+}
+
+main ul li  {
+  display: inline-block;
+}
+
+main li a i {
+font-size: 30px !important;
+  padding: 5px;
+  margin: 15px;
+  margin-bottom: 0;
+  border-radius: 5px;
+  color: #222;
+  transition: 300ms ease-in-out;
+}
+
+main a:hover #linkden, main a:focus #linkden {
+  color: #fff;
+  background-color: #0077b5;
+}
+
+main a:hover #github, main a:focus #github {
+  color: #fff;
+  background-color: #000;
+}
+
+main a:hover #codepen, main a:focus #codepen {
+    color: #fff;
+    background-color: #000;
+ }
+
+main a:hover #stackOverflow, main a:focus #stackOverflow {
+  color: #fff;
+  background-color: #f48024;
+}
+
+.example img {
+  height: 200px;
+  width: 200px;
+}
+.banner {
+  background-image: url(images/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 450px;
+}
+
+.link {
+visibility: hidden;
+margin-top: -60px;
+position: absolute;
+}
+
+/*Tablet Styles*/
+  @media screen and (max-width: 768px;) {
+
+      .headshot {
+        margin-top: 80px;
+      }
+
+      .example img {
+        height: 150px;
+        width: 150px;
+      }
+  }
+
+/*Mobile Styles*/
+@media only screen and (max-width: 640px) {
+  .banner {
+    display: none;
+  }
+
+  #brand {
+    font-size: 20px;
+  }
+
+  #brand span {
+  display: none;
+  }
+
+  .headshot {
+    margin-top: 80px;
+      height: 175px;
+      width: 175px;
+  }
+
+  .example img {
+    height: 125px;
+    width: 125px;
+  }
+}
